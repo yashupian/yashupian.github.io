@@ -66,8 +66,6 @@
 
 
 
-  <meta name="keywords" content="python,">
-
 
 
 
@@ -78,21 +76,21 @@
 
 
 <meta name="description" content="point1：关于Tensorflow 这是一个关于Tensorflow的简单介绍（先不介绍了）    piont2：windows下Tensorflow-gpu的安装写在前面：装各种开发环境时，官网（Tensorflow官网链接）的说法为准，各类论坛博客的资料为辅。 1.所需要的硬件（nvidia显卡） 查看电脑上配备的nvidia显卡型号（方法很多，自行百度）；   查看显卡计算能力是否在3">
-<meta name="keywords" content="python">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Tensorflow">
 <meta property="og:url" content="http://yoursite.com/articles/Tensorflow/index.html">
 <meta property="og:site_name" content="不停">
 <meta property="og:description" content="point1：关于Tensorflow 这是一个关于Tensorflow的简单介绍（先不介绍了）    piont2：windows下Tensorflow-gpu的安装写在前面：装各种开发环境时，官网（Tensorflow官网链接）的说法为准，各类论坛博客的资料为辅。 1.所需要的硬件（nvidia显卡） 查看电脑上配备的nvidia显卡型号（方法很多，自行百度）；   查看显卡计算能力是否在3">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://yoursite.com/images/result_nvcc.png">
 <meta property="og:image" content="http://yoursite.com/images/result.png">
 <meta property="og:image" content="http://yoursite.com/images/code_test.png">
 <meta property="og:image" content="http://yoursite.com/images/code_result.png">
-<meta property="og:updated_time" content="2019-01-08T02:03:38.043Z">
+<meta property="og:updated_time" content="2019-03-24T06:20:10.054Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Tensorflow">
 <meta name="twitter:description" content="point1：关于Tensorflow 这是一个关于Tensorflow的简单介绍（先不介绍了）    piont2：windows下Tensorflow-gpu的安装写在前面：装各种开发环境时，官网（Tensorflow官网链接）的说法为准，各类论坛博客的资料为辅。 1.所需要的硬件（nvidia显卡） 查看电脑上配备的nvidia显卡型号（方法很多，自行百度）；   查看显卡计算能力是否在3">
-<meta name="twitter:image" content="http://yoursite.com/images/result.png">
+<meta name="twitter:image" content="http://yoursite.com/images/result_nvcc.png">
 
 
 
@@ -371,7 +369,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  455
+                  469
                 </span>
                 <span>字</span>
               
@@ -434,6 +432,10 @@
 </li>
 </ul>
 <h4 id="4-测试"><a href="#4-测试" class="headerlink" title="4.测试"></a>4.测试</h4><ul>
+<li><p>CUDA版本信息：<br>cmd命令和结果：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nvcc --version</span><br></pre></td></tr></table></figure>
+<p><img src="/images/result_nvcc.png" alt=""></p>
+</li>
 <li><p>装完CUDA后显卡信息的测试：<br>cmd命令和结果：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd C:\Program Files\NVIDIA Corporation\NVSMI</span><br><span class="line">nvidia-smi</span><br></pre></td></tr></table></figure>
 <p><img src="/images/result.png" alt=""></p>
@@ -478,12 +480,6 @@
 
     <footer class="post-footer">
       
-        <div class="post-tags">
-          
-            <a href="/tags/python/" title="python" rel="tag"><i class="fa fa-tag"></i> python</a>
-          
-        </div>
-      
 
       
       
@@ -502,6 +498,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/articles/java-tips/" rel="prev" title="java tips">
+                java tips <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -583,7 +583,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">10</span>
+                  <span class="site-state-item-count">11</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -685,7 +685,7 @@
   </span>
 
   <i class="fa fa-book"></i>
-  <span class="post-count">博客全站共&nbsp;2.6k&nbsp;字</span>
+  <span class="post-count">博客全站共&nbsp;2.7k&nbsp;字</span>
 
 </div>
 
