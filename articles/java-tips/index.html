@@ -85,7 +85,7 @@
 <meta property="og:site_name" content="不停">
 <meta property="og:description" content="Q1:java中的i = i++结果？123int i = 0;i = i++;System.out.println(&amp;quot;i的值是 &amp;quot;+i); 答：0。因为这是因为jvm在处理i = i++时，会建立一个临时变量来接收i++的的值（接收的i++的值时0），然后返回这个临时变量的值，返回的值再被等号左边的变量接收了。这样就是说i虽然自增了但是又被赋值了0，这样输出的结果自然就是0">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-03-24T12:18:25.241Z">
+<meta property="og:updated_time" content="2019-03-29T08:57:08.401Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="java tips">
 <meta name="twitter:description" content="Q1:java中的i = i++结果？123int i = 0;i = i++;System.out.println(&amp;quot;i的值是 &amp;quot;+i); 答：0。因为这是因为jvm在处理i = i++时，会建立一个临时变量来接收i++的的值（接收的i++的值时0），然后返回这个临时变量的值，返回的值再被等号左边的变量接收了。这样就是说i虽然自增了但是又被赋值了0，这样输出的结果自然就是0">
@@ -367,7 +367,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  240
+                  256
                 </span>
                 <span>字</span>
               
@@ -407,7 +407,7 @@
 
       
         <script src="\assets\js\APlayer.min.js"> </script><h2 id="Q1-java中的i-i-结果？"><a href="#Q1-java中的i-i-结果？" class="headerlink" title="Q1:java中的i = i++结果？"></a>Q1:java中的i = i++结果？</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">int i = 0;</span><br><span class="line">i = i++;</span><br><span class="line">System.out.println(&quot;i的值是 &quot;+i);</span><br></pre></td></tr></table></figure>
-<p>答：0。因为这是因为jvm在处理i = i++时，会建立一个临时变量来接收i++的的值（接收的i++的值时0），然后返回这个临时变量的值，返回的值再被等号左边的变量接收了。这样就是说i虽然自增了但是又被赋值了0，这样输出的结果自然就是0了。</p>
+<p>答：0。因为这是因为jvm在处理i = i++时，会建立一个临时变量来接收i++的的值（接收的i++的值时0），然后返回这个临时变量的值，返回的值再被等号左边的变量接收了。这样就是说i虽然自增了但是又被赋值了0，这样输出的结果自然就是0了；结果上来说，C、C++中上式的结果也是0。</p>
 <h2 id="Q2-Java的参数传递是「按值传递」还是「按引用传递」？"><a href="#Q2-Java的参数传递是「按值传递」还是「按引用传递」？" class="headerlink" title="Q2:Java的参数传递是「按值传递」还是「按引用传递」？"></a>Q2:Java的参数传递是「按值传递」还是「按引用传递」？</h2><p>答：是按值传递。<span style="color:red;font-weight:bold">Java 语言的参数传递只有「按值传递」。</span>当一个实例对象作为参数被传递到方法中时，参数的值就是该对象的引用的一个副本。指向同一个对象，对象的内容可以在被调用的方法内改变，但对象的引用(不是引用的副本) 是永远不会改变的。</p>
 
       
@@ -657,7 +657,7 @@
   </span>
 
   <i class="fa fa-book"></i>
-  <span class="post-count">博客全站共&nbsp;3.2k&nbsp;字</span>
+  <span class="post-count">博客全站共&nbsp;3.8k&nbsp;字</span>
 
 </div>
 

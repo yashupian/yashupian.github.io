@@ -85,7 +85,7 @@
 <meta property="og:site_name" content="不停">
 <meta property="og:description" content="Q1:使用SpringMVC注解@RequestParam(value=”XXX”,required=false)时需要注意的问题？12345@RequestMapping(value = &amp;quot;/index&amp;quot;)public String index(@RequestParam(value = &amp;quot;action&amp;quot;, required = false)">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-03-28T12:53:05.569Z">
+<meta property="og:updated_time" content="2019-03-29T08:59:28.243Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="javaweb-tips">
 <meta name="twitter:description" content="Q1:使用SpringMVC注解@RequestParam(value=”XXX”,required=false)时需要注意的问题？12345@RequestMapping(value = &amp;quot;/index&amp;quot;)public String index(@RequestParam(value = &amp;quot;action&amp;quot;, required = false)">
@@ -367,7 +367,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  188
+                  225
                 </span>
                 <span>字</span>
               
@@ -409,6 +409,7 @@
         <script src="\assets\js\APlayer.min.js"> </script><h2 id="Q1-使用SpringMVC注解-RequestParam-value-”XXX”-required-false-时需要注意的问题？"><a href="#Q1-使用SpringMVC注解-RequestParam-value-”XXX”-required-false-时需要注意的问题？" class="headerlink" title="Q1:使用SpringMVC注解@RequestParam(value=”XXX”,required=false)时需要注意的问题？"></a>Q1:使用SpringMVC注解@RequestParam(value=”XXX”,required=false)时需要注意的问题？</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">@RequestMapping(value = &quot;/index&quot;)</span><br><span class="line">public String index(@RequestParam(value = &quot;action&quot;, required = false)</span><br><span class="line">                    @RequestParam(value = &quot;notIncludeTypeId&quot;, required = false) int notIncludeTypeId)&#123;</span><br><span class="line">                    (……)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p> 注意：当可选参数（required = false表示前端不一定要传此参数）“notIncludeTypeId”为空时，系统出现如下错误：<br> <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Optional int parameter &apos;notIncludeTypeId&apos; is not present </span><br><span class="line">but cannot be translated into a null value due to being declared as a primitive type. </span><br><span class="line">Consider declaring it as object wrapper for the corresponding primitive type.</span><br></pre></td></tr></table></figure></p>
 <p>出错原因：当可选参数“notIncludeTypeId”不存在时，Spring默认将其赋值为null，但由于notIncludeTypeId已定于为基本类型int，所以赋值失败。<br>解决办法：Consider declaring it as object wrapper for the corresponding primitive type，建议使用包装类型代替基本类型，如使用“Integer”代替“int”。</p>
+<h2 id="Q2-SpringMVCSpring-MVC中ModelAndView的用法"><a href="#Q2-SpringMVCSpring-MVC中ModelAndView的用法" class="headerlink" title="Q2:SpringMVCSpring MVC中ModelAndView的用法"></a>Q2:SpringMVCSpring MVC中ModelAndView的用法</h2><p>作用：将后台返回的数据传递给View层，同时包含一个要访问的View层的URL地址。</p>
 
       
     </div>
@@ -607,7 +608,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Q1-使用SpringMVC注解-RequestParam-value-”XXX”-required-false-时需要注意的问题？"><span class="nav-number">1.</span> <span class="nav-text">Q1:使用SpringMVC注解@RequestParam(value=”XXX”,required=false)时需要注意的问题？</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Q1-使用SpringMVC注解-RequestParam-value-”XXX”-required-false-时需要注意的问题？"><span class="nav-number">1.</span> <span class="nav-text">Q1:使用SpringMVC注解@RequestParam(value=”XXX”,required=false)时需要注意的问题？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Q2-SpringMVCSpring-MVC中ModelAndView的用法"><span class="nav-number">2.</span> <span class="nav-text">Q2:SpringMVCSpring MVC中ModelAndView的用法</span></a></li></ol></div>
             
 
           </div>
@@ -653,7 +654,7 @@
   </span>
 
   <i class="fa fa-book"></i>
-  <span class="post-count">博客全站共&nbsp;3.2k&nbsp;字</span>
+  <span class="post-count">博客全站共&nbsp;3.8k&nbsp;字</span>
 
 </div>
 
