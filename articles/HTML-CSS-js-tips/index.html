@@ -77,18 +77,18 @@
 
 
 
-<meta name="description" content="Q1:JS中如何调用其他JS中的函数？答：只要引用页面a.html同时引用到两个JS，那么是可以直接调用的。但是要注意引用两个JS的顺序。例如a.html中同时引入：12&amp;lt;script type=&amp;quot;text/javascript&amp;quot; src=&amp;quot;$&amp;#123;webPath&amp;#125;/js/admin/validate.js&amp;quot;&amp;gt;&amp;lt;/scri">
+<meta name="description" content="Q1:JS中如何调用其他JS中的函数？答：只要引用页面a.html同时引用到两个JS，那么是可以直接调用的。但是要注意引用两个JS的顺序。例如a.html中同时引入：12&amp;lt;script type=&quot;text/javascript&quot; src=&quot;$&amp;#123;webPath&amp;#125;/js/admin/validate.js&quot;&amp;gt;&amp;lt;/script&amp;gt;&amp;lt;script typ">
 <meta name="keywords" content="前端">
 <meta property="og:type" content="article">
 <meta property="og:title" content="HTML_CSS_js-tips">
 <meta property="og:url" content="http://yoursite.com/articles/HTML-CSS-js-tips/index.html">
 <meta property="og:site_name" content="不停">
-<meta property="og:description" content="Q1:JS中如何调用其他JS中的函数？答：只要引用页面a.html同时引用到两个JS，那么是可以直接调用的。但是要注意引用两个JS的顺序。例如a.html中同时引入：12&amp;lt;script type=&amp;quot;text/javascript&amp;quot; src=&amp;quot;$&amp;#123;webPath&amp;#125;/js/admin/validate.js&amp;quot;&amp;gt;&amp;lt;/scri">
+<meta property="og:description" content="Q1:JS中如何调用其他JS中的函数？答：只要引用页面a.html同时引用到两个JS，那么是可以直接调用的。但是要注意引用两个JS的顺序。例如a.html中同时引入：12&amp;lt;script type=&quot;text/javascript&quot; src=&quot;$&amp;#123;webPath&amp;#125;/js/admin/validate.js&quot;&amp;gt;&amp;lt;/script&amp;gt;&amp;lt;script typ">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-03-27T06:26:59.016Z">
+<meta property="og:updated_time" content="2019-07-07T13:58:34.962Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="HTML_CSS_js-tips">
-<meta name="twitter:description" content="Q1:JS中如何调用其他JS中的函数？答：只要引用页面a.html同时引用到两个JS，那么是可以直接调用的。但是要注意引用两个JS的顺序。例如a.html中同时引入：12&amp;lt;script type=&amp;quot;text/javascript&amp;quot; src=&amp;quot;$&amp;#123;webPath&amp;#125;/js/admin/validate.js&amp;quot;&amp;gt;&amp;lt;/scri">
+<meta name="twitter:description" content="Q1:JS中如何调用其他JS中的函数？答：只要引用页面a.html同时引用到两个JS，那么是可以直接调用的。但是要注意引用两个JS的顺序。例如a.html中同时引入：12&amp;lt;script type=&quot;text/javascript&quot; src=&quot;$&amp;#123;webPath&amp;#125;/js/admin/validate.js&quot;&amp;gt;&amp;lt;/script&amp;gt;&amp;lt;script typ">
 
 
 
@@ -406,7 +406,7 @@
       
 
       
-        <script src="\assets\js\APlayer.min.js"> </script><h2 id="Q1-JS中如何调用其他JS中的函数？"><a href="#Q1-JS中如何调用其他JS中的函数？" class="headerlink" title="Q1:JS中如何调用其他JS中的函数？"></a>Q1:JS中如何调用其他JS中的函数？</h2><p>答：只要引用页面a.html同时引用到两个JS，那么是可以直接调用的。<span style="color:red;font-weight:bold">但是要注意引用两个JS的顺序。</span>例如a.html中同时引入：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;script type=&quot;text/javascript&quot; src=&quot;$&#123;webPath&#125;/js/admin/validate.js&quot;&gt;&lt;/script&gt;</span><br><span class="line">&lt;script type=&quot;text/javascript&quot; src=&quot;$&#123;webPath&#125;/js/admin/login.js&quot;&gt;&lt;/script&gt;</span><br></pre></td></tr></table></figure></p>
+        <script src="\assets\js\APlayer.min.js"> </script><h2 id="Q1-JS中如何调用其他JS中的函数？"><a href="#Q1-JS中如何调用其他JS中的函数？" class="headerlink" title="Q1:JS中如何调用其他JS中的函数？"></a>Q1:JS中如何调用其他JS中的函数？</h2><p>答：只要引用页面a.html同时引用到两个JS，那么是可以直接调用的。<span style="color:red;font-weight:bold">但是要注意引用两个JS的顺序。</span>例如a.html中同时引入：<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span> <span class="attr">src</span>=<span class="string">"$&#123;webPath&#125;/js/admin/validate.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span> <span class="attr">src</span>=<span class="string">"$&#123;webPath&#125;/js/admin/login.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
 <p>那么，login.js中可以调用validate.js中的函数；反之，是不可以的。</p>
 
       
@@ -544,7 +544,7 @@
               <img class="site-author-image" itemprop="image" src="/uploads/profilePhoto.png" alt="呀薯片">
             
               <p class="site-author-name" itemprop="name">呀薯片</p>
-              <p class="site-description motion-element" itemprop="description">邮箱：yashupian@shu.edu.cn</p>
+              <p class="site-description motion-element" itemprop="description">邮箱：yashupian@shu.edu.cn<br>CSDN：<a href="https://blog.csdn.net/qq_27879831" target="_blank">YASHUPIAN的博客</a></p>
           </div>
 
           <nav class="site-state motion-element">
@@ -554,7 +554,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">13</span>
+                  <span class="site-state-item-count">14</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -565,7 +565,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -656,7 +656,7 @@
   </span>
 
   <i class="fa fa-book"></i>
-  <span class="post-count">博客全站共&nbsp;4.5k&nbsp;字</span>
+  <span class="post-count">博客全站共&nbsp;4.8k&nbsp;字</span>
 
 </div>
 
